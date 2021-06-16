@@ -1,0 +1,56 @@
+#textHead {
+  font-size: 1.3em;
+  text-align: left;
+  position: relative;
+}
+#textWords {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0em 1em 0em;
+}
+#tWNeed {
+  font-size: 1.3em;
+}
+#tWNeed > span {
+  font-size: 1em;
+  margin: 0em .3em 0em .3em;
+}
+#tWCurrent {
+  font-size: 1.3em;
+}
+#tWCurrent > span {
+  font-size: 1em;
+  margin-left: .3em;
+  color: #ffaf48;
+}
+#textText {
+  font-size: 1.3em;
+  padding: 1em;
+  text-align: left;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 10em;
+  border-radius: .4em;
+  border: .08em solid #aaaaaa;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.bigText{
+  font-size: 1em;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.TTH{
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: bold;
+}

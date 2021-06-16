@@ -1,0 +1,268 @@
+@font-face {
+    src: url("/resources/fonts/languages/font.ttf");
+    font-family: "font";
+}
+
+*{
+    font-family: font, sans-serif;
+}
+
+html {
+    font-size: 14px;
+    background: #67a964 url("/resources/images/languages/background.svg") repeat;
+    background-size: 26em auto;
+}
+
+body {
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+div{
+    border-radius: 10px;
+}
+
+p{
+    margin: 0 0 1em 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 4em 0 4em;
+    border-radius: 10px;
+}
+
+header > img {
+    width: 3em;
+    margin-right: 1em;
+}
+
+header > span {
+    font-size: 1.3em;
+}
+
+input[type=radio]{
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+textarea{
+    outline: none;
+    background-color: #ffffff;
+    border: .1em solid #8c8c8c;
+    display: flex;
+    border-radius: 10px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #ffffff;
+    padding: 1em 1em 2em 1em;
+    margin: 1em 4em;
+    font-size: 1em;
+    position: relative;
+}
+
+#olimpHeader {
+    display: flex;
+    align-self: stretch;
+    margin-bottom: 1.5em;
+}
+
+#olimpHeader > span {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    flex-grow: 1;
+}
+
+#timer{
+    display: flex;
+    position: absolute;
+    font-size: 1.3em;
+    padding: 0.5em;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+    background-color: #f0f0f0;
+}
+
+#startBoard{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 1em 1em 1em 1em;
+    font-size: 1em;
+    position: relative;
+}
+
+#startBtn{
+    background-color: #f9ce62;
+    border-radius: 50px;
+    border: none;
+    margin: 1em;
+    padding: 8px;
+    font-size: 24px;
+}
+
+#part{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    position: relative;
+}
+
+#part > span{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+#questsDiv, #essayDiv, #insertDiv{
+    display: flex;
+    padding: 0 2em 0 2em;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#nextPartAndFinishBtn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #f9ce62;
+    border-radius: 50px;
+    border: none;
+    padding: 8px;
+    font-size: 24px;
+}
+
+.insertButton:hover ,#nextPartAndFinishBtn:hover, #startBtn:hover, .insertWord:hover {
+    background-color: #edc45f;
+}
+
+#countBar{
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    margin: 1em 0 1em 0;
+}
+
+.insertButton{
+    background-color: #f9ce62;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.countBarPart{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.quest{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: 0 4em 1em 4em;
+    background-color: #f0f0f0;
+    padding: 0.5em;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.questText{
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.essayText{
+    align-self: inherit;
+    flex-grow: 1;
+    resize: none;
+    margin: 1em 0 0 0;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.answer{
+    display: flex;
+    flex-direction: column;
+}
+
+.answerBox{
+    display: flex;
+    margin-bottom: 0.2em;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.flexText{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0.5em;
+    background-color: #f0f0f0;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.wordsForInsert{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background-color: #f0f0f0;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.wordForInsert{
+    background-color: #f9ce62;
+    border: .1em solid #8c8c8c;
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.wordsList {
+    display: none;
+    overflow: scroll;
+    position: fixed;
+    z-index: 10;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:flex;
+    flex-direction: column;
+    background-color: #f9ce62;
+}
+
+.insertWord{
+    background-color: #f9ce62;
+    padding: 0.2em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    min-width: 100%;
+    display: list-item;
+}

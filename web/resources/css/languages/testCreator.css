@@ -1,0 +1,303 @@
+@font-face {
+    src: url("/resources/fonts/languages/font.ttf");
+    font-family: "font";
+}
+
+*{
+    font-family: font, sans-serif;
+}
+
+html {
+    font-size: 14px;
+    background: #67a964 url("/resources/images/languages/background.svg") repeat;
+    background-size: 26em auto;
+}
+
+body {
+    justify-content: center;
+}
+
+span{
+    font-size: 1.3em;
+}
+
+div, button{
+    border-radius: 10px;
+}
+
+input{
+    outline: none;
+    background-color: #ffffff;
+    border: .1em solid #8c8c8c;
+    display: flex;
+    border-radius: 10px;
+}
+
+textarea{
+    outline: none;
+    background-color: #ffffff;
+    border: .1em solid #8c8c8c;
+    display: flex;
+    border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: #ffffff;
+    padding: 2em 2em 2em 2em;
+    margin: 2em 4em 2em 4em;
+    font-size: 1em;
+    position: relative;
+
+}
+
+#nameAndTimer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+#parts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-self: stretch;
+    font-size: 1em;
+    position: relative;
+}
+
+#patternDropDown{
+    cursor: pointer;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+    font-size: 1.5em;
+    background-color: #ffb13c;
+    padding: 1em 1em 1em 1em;
+}
+
+.numInput{
+    width: 3em;
+    align-self: baseline;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0 0.5em 0 0.5em;
+}
+
+.cInput {
+    flex-grow: 1;
+    align-self: baseline;
+    text-align: center;
+    width: 30em;
+    font-size: 1.3em;
+}
+
+.wordInput {
+    flex-grow: 1;
+    align-self: baseline;
+    text-align: center;
+    width: 30em;
+    font-size: 1.3em;
+}
+
+.cInputName {
+    align-self: baseline;
+    text-align: center;
+    width: 30em;
+    font-size: 1.3em;
+}
+
+.dropdown{
+    display: flex;
+    position: relative;
+    margin-top: 1em;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+    background-color: #f9ce62;
+}
+
+.dropBtn{
+    background-color: #f9ce62;
+    padding: 0.2em;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+.pattern{
+    background-color: #f9ce62;
+    padding: 0.2em;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    min-width: 100%;
+    display: list-item;
+}
+/* Dropdown button on hover & focus */
+.dropBtn:hover, .dropBtn:focus, .pattern:hover {
+    background-color: #edc45f;
+}
+
+.testingPatternForm, .essayPatternForm, .insertWordsPatternForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #f0f0f0;
+    padding: 0 1em 1em 1em;
+    margin: 2em 0 0 0;
+    font-size: 1em;
+    position: relative;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.patternBar{
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    padding: 1em 0 0 0;
+}
+
+.questDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+    margin: 1em 0 1em 0;
+    position: relative;
+}
+
+.questBar{
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 1em;
+}
+
+.answerDiv{
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    padding: 0 1em 1em 1em;
+    position: relative;
+}
+
+.questInput{
+    flex-grow: 1;
+    resize: none;
+    font-size: 1.3em;
+    text-align: inherit;
+}
+
+.descriptionInput, .textWS{
+    flex-grow: 1;
+    resize: none;
+    margin: 1em 0 0 0;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.answerInput{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.closeButton:hover, .wordButton:hover{
+    background-color: #f72525;
+}
+
+.closeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: 1em;
+    background-color: #f75454;
+    border: none;
+    font-size: 1.3em;
+}
+
+.creatAnswerButton:hover , .creatQuestButton:hover, .saveBtn:hover, .insertButton:hover, .addWordButton:hover{
+    background-color: #edc45f;
+}
+
+.creatQuestButton{
+    background-color: #f9ce62;
+    border: none;
+    padding: 0.2em;
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+
+.patternBarForWords{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 0 0;
+    flex-wrap: wrap;
+}
+
+.wordButton{
+    background-color: #f9ce62;
+    border: none;
+    padding: 0.2em;
+    font-size: 1.3em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+.creatAnswerButton, .insertButton, .addWordButton{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 1.8em;
+    background-color: #f9ce62;
+    border: none;
+    padding: 0.5em;
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+
+.saveBtn{
+    background-color: #f9ce62;
+    border: none;
+    padding: 0.2em;
+    font-size: 1.3em;
+    margin-top: 2em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+

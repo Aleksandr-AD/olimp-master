@@ -1,0 +1,79 @@
+body {
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5em 2em 1.5em 2em;
+  margin: 2em;
+  font-size: 1em;
+  position: relative;
+  max-width: 39em;
+}
+
+.hideElem{
+  pointer-events: none;
+  opacity: .3;
+}
+
+.cOval {
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  background-color: #00ac5c;
+  top: .5em;
+}
+#cOvalLeft {
+  left: .5em;
+}
+#cOvalRight {
+  right: .5em;
+}
+
+#cHeader {
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+#cHeader > span {
+  margin-left: .5em;
+}
+
+.cInput {
+  background-color: #edebe6;
+  border: .1em solid #999999;
+  font-size: 1.3em;
+  text-align: center;
+  width: 20em;
+  padding: .3em 1em .3em 1em;
+  margin: .5em 0em .5em 0em;
+}
+
+#cBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.8em;
+}
+#cBStart {
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  font-size: 1.3em;
+  background-color: #ffb13c;
+  padding: .3em 1em .3em 1em;
+}
+#cBStart:hover {
+  background-color: #f1a739;
+}
+#cBStart:active {
+  background-color: #ffb13c;
+}

@@ -1,0 +1,291 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  margin: 2em 10em 2em 10em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  font-size: 1em;
+  padding: .5em 4em .5em 4em;
+  position: relative;
+}
+header > img {
+  height: 4em;
+  margin-right: 1.5em;
+}
+header > span {
+  color: #2d2d2d;
+  font-size: 1.4em;
+  text-align: left;
+}
+.hSmall,.hBig {
+  width: .7em;
+  background-color: #f7f7f7;
+  position: absolute;
+  height: 60%;
+}
+.hSmall {
+  height: 30%;
+}
+.hTopLine {
+  top: 0em;
+}
+.hBottomLine {
+  bottom: 0em;
+}
+#hTopBig {
+  right: calc(100% + .7em);
+}
+#hTopSmall {
+  right: calc(100% + 2.1em);
+}
+#hBottomBig {
+  left: calc(100% + .7em);
+}
+#hBottomSmall {
+  left: calc(100% + 2.1em);
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 0em 2em 0em;
+  font-size: 1em;
+}
+#info > span {
+  color: #ffffff;
+}
+#iLabel {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+#iSublabel {
+  font-weight: bolder;
+  font-size: 1.9em;
+  margin: .2em 0em .5em 0em;
+}
+#iDates {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  font-size: 1em;
+  padding: 1.5em;
+  width: 40em;
+}
+#rHead {
+  text-align: center;
+  position: relative;
+}
+#rHead > span {
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+.rMar{
+  margin-bottom: 2em;
+}
+
+.rGText{
+  font-family: Century Gothic, cursive;
+  font-style: italic;
+  font-size: 1.3em;
+  color: #757575;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.hideElem{
+  pointer-events: none;
+  opacity: .3;
+}
+
+.rHHText{
+  font-family: Century Gothic, cursive;
+  font-style: italic;
+  font-size: 1em;
+  color: #757575;
+  text-align: right;
+  margin-bottom: 0.6em;
+}
+.rHOval {
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  background-color: #67a964;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+}
+#rHLeft {
+  right: 105%;
+}
+#rHRight {
+  left: 105%;
+}
+#rStudInfo {
+  font-size: 1.3em;
+  text-align: left;
+  margin: 1em 0em 1em 0em;
+}
+#rStudInfo > a, #rStudInfo > a:hover, #rStudInfo > a:active {
+  text-decoration: underline;
+  color: #000000;
+  margin: 1em 0em 1em 0em;
+}
+#rInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+.rIItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5em 0em .5em 0em;
+}
+.rIItem > span {
+  font-size: 1.3em;
+}
+.rIItem > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  background-color: #edebe6;
+  border: .1em solid #999999;
+  width: 63%;
+}
+.rIItem > div > input {
+  background: none;
+  font-size: 1.3em;
+  text-align: left;
+  width: calc(100% - 2em);
+  padding: .4em 0em .4em 0em;
+}
+.rIItem > div > input.rIItemInputBlock {
+  pointer-events: none;
+  opacity: .7;
+}
+
+#rCheckboxLabel {
+  width: 100%;
+  text-align: left;
+  font-size: 1.3em;
+  margin: 1em 0em .5em 0em;
+}
+#rCheckboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+#rCheckboxes > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: .6em 0em .7em 0em;
+}
+.rCheckbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.rCBox {
+  border: .08em solid #999999;
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rCBoxSelect::before {
+  content: "\2716";
+  font-size: 1em;
+  position: relative;
+}
+.rCText {
+  font-size: 1.3em;
+}
+.rCheckboxLast {
+  margin-left: 9em;
+}
+
+#rBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3em;
+}
+#rBStart, #rBReg {
+  font-size: 1.3em;
+  padding: .3em 1em .3em 1em;
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#rBReg {
+  cursor: auto!important;
+  pointer-events: auto!important;
+}
+#rBStart {
+  margin-right: 1em;
+  background-color: #e8e8e8;
+}
+#rBStart:hover {
+  background-color: #efefef;
+}
+#rBStart:active {
+  background-color: #e8e8e8;
+}
+#rBReg {
+  background-color: #f4ae51;
+}
+#rBReg:hover {
+  background-color: #d69947;
+}
+#rBReg:active {
+  background-color: #f4ae51;
+}

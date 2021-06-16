@@ -1,0 +1,79 @@
+#insertHead {
+  font-size: 1.3em;
+  text-align: left;
+}
+#insertWords {
+  margin: 2em 0em 2em 0em;
+  background-color: #f2f2f2;
+  border-radius: .3em;
+  padding: 1em;
+  text-align: left;
+}
+.iWItem {
+  display: inline;
+  font-size: 1.3em;
+  margin: 0em .3em 0em .3em;
+}
+.iWItemUsed {
+  opacity: .2;
+}
+#insertText {
+  position: relative;
+  margin-top: 1em;
+}
+.iTParagraph {
+  font-size: 1.3em;
+  text-align: left;
+  text-indent: 1em;
+}
+.iTItem {
+  cursor: pointer;
+  position: relative;
+}
+.iTItemEmpty {
+  background-color: #f8ebdc;
+  border: .07em solid #f6e5d3;
+  border-radius: .3em;
+}
+.iTItemEmpty:before {
+  content: '...';
+  font-size: 1.3em;
+  margin: 0em .5em 0em .5em;
+}
+.iTItemFull {
+  text-decoration: underline;
+}
+#iTPop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 1em;
+  padding: .5em 1em .5em .5em;
+  border-radius: .3em;
+  border: .07em solid #f6e5d3;
+  background-color: #f8ebdc;
+  max-height: 15em;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+#iTPop.iTPopShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+.iTPItem {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .3em 0em .3em 0em;
+}
+.iTPItem:hover, .iTPItemSelect {
+  background-color: #f4ddc8;
+}
+.iTPItemInactive {
+  opacity: .5;
+}

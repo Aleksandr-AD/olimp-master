@@ -1,0 +1,51 @@
+.tItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+}
+.tINumber {
+  font-size: 1.3em;
+  color: #b2b2b2;
+}
+.tIQuest {
+  font-size: 1.3em;
+  margin-top: .8em;
+}
+.tIAnswers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: .8em;
+}
+.tIAItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: .2em 0em .2em 0em;
+  cursor: pointer;
+}
+.tIAItem > div {
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  border: .05em solid #b3b3b3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: .5em;
+}
+.tIAItem > div.tIAISelect::before {
+  content: "";
+  background-color: #494949;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.tIAItem > span {
+  font-size: 1.2em;
+}

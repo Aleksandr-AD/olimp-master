@@ -1,0 +1,37 @@
+.pSecondAudio {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#audHead {
+  font-size: 1.3em;
+  text-align: left;
+}
+#audSound {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em 0em 1em 0em;
+}
+#audTest {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#aSButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0em 1em 0em;
+  cursor: pointer;
+}
+#aSButton:before {
+  content: "";
+  border: 1.5em solid transparent;
+  border-left: 2em solid #000000;
+}
+.aSButtonInactive {
+  pointer-events: none;
+  opacity: .4;
+}

@@ -1,0 +1,44 @@
+@font-face {
+  src: url("/resources/fonts/languages/font.ttf");
+  font-family: "font";
+}
+
+* {
+  margin: 0em;
+  padding: 0em;
+  outline: none;
+  border: 0em;
+  font-family: font, sans-serif;
+  color: #000000;
+}
+
+html {
+  font-size: 14px;
+  background: #67a964 url("/resources/images/languages/background.svg") repeat;
+  background-size: 26em auto;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  left: 0em;
+  top: 0em;
+  min-height: 100%;
+}
+
+#support {
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  margin-top: 1.5em;
+}
+
+#support > a {
+  font-size: 1em;
+  text-decoration: underline;
+}

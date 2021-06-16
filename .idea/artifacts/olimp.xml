@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="olimp">
+    <output-path>$PROJECT_DIR$/out/artifacts/olimp</output-path>
+    <root id="archive" name="olimp.war">
+      <element id="javaee-facet-resources" facet="olimp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="olimp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.0" />
+          <element id="library" level="project" name="postgresql-42.1.4" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:itextpdf:5.5.13.2" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.56" />
+          <element id="library" level="project" name="javax.mail:javax.mail-api:1.6.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

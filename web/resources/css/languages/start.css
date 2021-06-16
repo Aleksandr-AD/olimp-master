@@ -1,0 +1,237 @@
+body {
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #ffffff;
+  padding: 1.5em 2em 1.5em 2em;
+  margin: 2em;
+  font-size: 1em;
+  position: relative;
+  max-width: 39em;
+}
+
+.rGText{
+  font-family: Century Gothic, cursive;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #757575;
+  text-align: justify;
+  margin-top: 1em;
+}
+
+.hideElem{
+  pointer-events: none;
+  opacity: .3;
+}
+
+.cOval {
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  background-color: #00ac5c;
+  top: .5em;
+}
+#cOvalLeft {
+  left: .5em;
+}
+#cOvalRight {
+  right: .5em;
+}
+
+#cHeader {
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+}
+#cHeader > span {
+  margin-left: .5em;
+}
+#cHExit {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0em;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+#cCheckboxLabel {
+  font-size: 1.3em;
+  text-align: left;
+  margin-top: 1em;
+}
+#rCheckboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+#rCheckboxes > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: .6em 0em .7em 0em;
+}
+.rCheckbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.rCBox {
+  border: .08em solid #999999;
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rCBoxSelect::before, .rCheckboxEnd > .rCBox::before {
+  content: "\2716";
+  font-size: 1em;
+  position: relative;
+}
+.rCheckboxOff, .rCheckboxEnd {
+  opacity: .5;
+  cursor: auto;
+  pointer-events: none;
+}
+.rCText {
+  font-size: 1.3em;
+}
+.rCheckboxLast {
+  margin-left: 9em;
+}
+
+#cPartsLabel {
+  font-size: 1.3em;
+  margin: 2em 0em 1em 0em;
+  text-align: left;
+}
+#cParts {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.cPItem {
+  text-align: left;
+  font-size: 1.3em;
+}
+.cPItem > span {
+  margin-left: .4em;
+}
+#cTimes {
+  font-size: 1.3em;
+  text-align: left;
+  margin-top: 1em;
+}
+
+#cBtn, #cBtnD {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 1.8em;
+  margin-left: 1.8em;
+}
+
+#cBStart{
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  font-size: 1.3em;
+  background-color: #ffb13c;
+  padding: .3em 1em .3em 1em;
+}
+#cBConf{
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  font-size: 1.3em;
+  background-color: #ffb13c;
+  padding: .3em 1em .3em 1em;
+}
+#cBCreate{
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  font-size: 1.3em;
+  background-color: #ffb13c;
+  padding: .3em 1em .3em 1em;
+}
+#cBTest{
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  font-size: 1.3em;
+  background-color: #ffb13c;
+  padding: .3em 1em .3em 1em;
+}
+
+#cBDInstruction {
+  cursor: pointer;
+  -webkit-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+  font-size: 1.2em;
+  background-color: #ffb13c;
+  padding: .3em 1em .3em 1em;
+}
+
+#cBStart:hover {
+  background-color: #f1a739;
+}
+#cBStart:active {
+  background-color: #ffb13c;
+}
+
+#cBDInstruction:hover {
+  background-color: #f1a739;
+}
+#cBDInstruction:active {
+  background-color: #ffb13c;
+}
+
+#Instruction {
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  margin-top: 1.5em;
+}
+
+
+
+body.bodyBlock, body.bodyBlock * {
+  pointer-events: none!important;
+}
